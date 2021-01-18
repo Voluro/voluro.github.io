@@ -21,8 +21,9 @@ def calculator():
     print("3.Multiply")
     print("4.Divide")
     print("5.Whole Division")
-
-    while True:
+    print('exit to exit')
+    r = True
+    while r:
         i = input("Enter choice(1/2/3/4): ")
 
         if i in ('1', '2', '3', '4', '5'):
@@ -43,5 +44,7 @@ def calculator():
 
             elif i == '5':
                 print(num1, "//", num2, "=", wholeDiv(num1, num2))
+            elif i == 'exit':
+                run = False
         else:
             print("Invalid Input")
